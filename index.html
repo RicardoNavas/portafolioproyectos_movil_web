@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio - Ricardo Navas</title>
+  <script src="https://cdn.tailwindcss.com"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <style>    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1e1e1e;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #FFD700;
+      color: #121212;
+    }
+
+    .sobre-mi {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+    }
+
+    .sobre-img img {
+      width: 250px;
+      border-radius: 12px;
+    }
+
+    .sobre-text {
+      max-width: 600px;
+      margin-left: 40px;
+    }
+
+    .sobre-text h2 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 32px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .sobre-text p {
+      text-align: justify;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .botones {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn:nth-child(1) {
+      background-color: #FFD700;
+      color: #121212;
+    }
+
+    .btn:nth-child(2) {
+      background-color: #000;
+      color: #fff;
+    }
+
+    /*.btn:nth-child(3) {
+      background-color: #0077b5;
+      color: #fff;
+    }*/
+
+.btn-linkedin {
+  background-color: #0077B5; /* Azul oficial LinkedIn */
+  color: #fff;
+  border-radius: 8px; /* esquinas suaves, no redondas */
+  padding: 12px 24px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-linkedin:hover {
+  background-color: #006097; /* Azul más oscuro al hover */
+  transform: translateY(-2px);
+}
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .sobre-mi {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .sobre-text {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      .botones {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div></div>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>        
+        <li><a href="#certificaciones">Certificaciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>  
+      </ul>        
+    </nav>
+
+
+  </header>
+
+  <!-- SOBRE MI -->
+  <section class="sobre-mi" id="sobre-mi">
+    <div class="sobre-img">
+      <img src="img/foto-perfil.jpg" alt="Foto Ricardo Navas">
+    </div>
+    <div class="sobre-text">
+      <h2>RICARDO NAVAS</h2>
+      <h2>DESARROLLADOR - FULLSTACK</h2>
+      <p>
+        Ingeniero de Sistemas con más de 10 años de experiencia en desarrollo de software web y móvil,
+        especializado en Angular, .NET (C#), SQL Server y Android (Java/Kotlin). Fuerte dominio en la
+        construcción de APIs RESTful, integración con servicios web SOAP/REST y bases de datos relacionales.
+        Apasionado por la Inteligencia Artificial, automatización de procesos y mejora continua. Alta
+        capacidad de análisis, trabajo en equipo y adaptación a entornos ágiles (Scrum).
+      </p>
+      <div class="botones">
+        <a href="cv/Hoja de Vida Ricardo Navas.pdf" download class="btn">Download CV</a>
+        <!--<a href="https://github.com/TU-USUARIO" target="_blank" class="btn">GitHub</a>-->
+        <a href="https://www.linkedin.com/in/ricardo-navas-795157187/" target="_blank" class="btn-linkedin">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+
+  <section id="proyectos" class="px-4 py-10">
+    
+    <div class="max-w-5xl mx-auto">      
+      <h2 class="text-[35px] font-bold text-yellow-400 text-center mb-4">Proyectos</h2>           
+    
+      <h3 class="text-[20px] text-yellow-400 font-semibold mb-4">Aplicación Móvil GeoLaar y Tracking Web</h3>      
+      <br>                
+      <!-- Android -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">                 
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+              <!-- Logo + Texto -->
+              <div class="flex items-center gap-4">
+                <img
+                src="img/android.png"
+                alt="Android Logo"
+                class="w-12 h-12 object-contain"
+              />
+                <img
+                src="img/VStudio_Icon.png"
+                alt="Android Logo"
+                class="w-12 h-12 object-contain"
+              />
+              <h3 class="font-semibold text-white text-lg">Android Studio  -   Visual Studio .NET </h3>
+             </div>
+
+            <!-- Flecha -->
+             <svg :class="open ? 'rotate-180' : ''" 
+             class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+             fill="currentColor" 
+             viewBox="0 0 20 20">
+             <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+            </svg>
+         </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+             <h3 class="text-[16px] text-white text-white-400">CANAL DE YOUTUBE - DEMO PROYECTO</h3>                 
+       <div class="flex flex-col items-start gap-2">
+  <a href="https://www.youtube.com/watch?v=X8HER-2eshs" target="_blank" class="flex flex-col items-start">
+    <img
+      src="img/y.jpg"
+      alt="Youtube Logo"
+      class="w-16 h-16 object-contain"
+    />
+   <span class="text-blue-500 font-semibold underline hover:underline mt-1">
+    Ver Demo
+  </span>
+  </a>
+  </div> 
+</section>
+
+<section id="proyectos" class="px-4 py-10">    
+    <div class="max-w-5xl mx-auto">           
+    <h3 class="text-[20px] text-yellow-400 font-semibold mb-4">Sistema de Ventas</h3>      
+      <br>                
+      <!-- Android -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">                 
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+              <!-- Logo + Texto -->
+              <div class="flex items-center gap-4">
+                <img
+                src="img/VStudio_Icon.png"
+                alt="Android Logo"
+                class="w-12 h-12 object-contain"
+              />
+                <img
+                src="img/sql-server.png"
+                alt="Android Logo"
+                class="w-12 h-12 object-contain"
+              />
+              <h3 class="font-semibold text-white text-lg">Visual Studio .NET - SqlServer</h3>
+             </div>
+
+            <!-- Flecha -->
+             <svg :class="open ? 'rotate-180' : ''" 
+             class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+             fill="currentColor" 
+             viewBox="0 0 20 20">
+             <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+            </svg>
+         </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <h3 class="text-[16px] text-white text-white-400">CANAL DE YOUTUBE - DEMO PROYECTO</h3>                 
+       <div class="flex flex-col items-start gap-2">
+  <a href="https://youtu.be/Z5xLroYNtrQ" target="_blank" class="flex flex-col items-start">
+    <img
+      src="img/y.jpg"
+      alt="Youtube Logo"
+      class="w-16 h-16 object-contain"
+    />
+    <span class="text-blue-500 font-semibold underline hover:underline mt-1">
+    Ver Demo
+    </span>
+  </a>
+  </div>
+  <br>
+  <br>     
+<h3 class="text-[18px] text-white ">ACCESO AL SISTEMA</h3>                  
+<h3 class="text-[18px] text-white ">USUARIO:     ricardonavascabezas@gmail.com</h3>                  
+<h3 class="text-[18px] text-white ">CONTRASEÑA:  rnavasventas-/*</h3>                  
+<div class="flex flex-col items-start gap-2"> 
+  <a href="https://www.rnavasventas.somee.com/" target="_blank" class="flex flex-col items-start">
+     <span class="text-blue-500 font-semibold underline hover:underline mt-1">
+      https://www.rnavasventas.somee.com/
+    </span>
+  </a>
+</div>     
+  <br>
+  <br> 
+<h3 class="text-[18px] text-white">VER CÓDIGO EN GitHub</h3>                  
+<div class="flex flex-col items-start gap-2">
+  <a href="https://github.com/RicardoNavas/Ventas" target="_blank" class="flex flex-row items-center gap-2">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+      alt="GitHub Logo"
+      class="w-12 h-12 object-contain invert"
+    />
+    <span class="text-yellow-400 font-semibold hover:underline">     
+    </span>
+  </a>
+</div>  
+</section>
+
+<section id="proyectos" class="px-4 py-10">    
+    <div class="max-w-5xl mx-auto">           
+    <h3 class="text-[20px] text-yellow-400 font-semibold mb-4">Microservicios - Transacciones Bancarias</h3>      
+      <br>                
+      <!-- Android -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">                 
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+              <!-- Logo + Texto -->
+              <div class="flex items-center gap-4">
+                <img
+                src="img/VStudio_Icon.png"
+                alt="Android Logo"
+                class="w-12 h-12 object-contain"
+              />
+                <img
+                src="img/sql-server.png"
+                alt="Android Logo"
+                class="w-12 h-12 object-contain"
+              />
+              <h3 class="font-semibold text-white text-lg">Visual Studio .NET - SqlServer</h3>
+             </div>
+
+            <!-- Flecha -->
+             <svg :class="open ? 'rotate-180' : ''" 
+             class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+             fill="currentColor" 
+             viewBox="0 0 20 20">
+             <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+            </svg>
+         </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <h3 class="text-[16px] text-white text-white-400">Este pequeño proyecto se encuentra relacionado con la Arquitectura de Microservicios para la gestión de clientes y movimientos financieros. En donde en sentido técnico está presente lo siguiente:</h3>                 
+            <br>            
+            <h3 class="text-[16px] text-white text-white-400">1. Diseño de microservicios</h3>  
+            <br>               
+            <h3 class="text-[16px] text-white text-white-400">Separación por dominios (Ej: Clientes y Movimientos)</h3>                 
+            <h3 class="text-[16px] text-white text-white-400">Comunicación entre servicios vía REST API</h3>                
+            <br>            
+            <h3 class="text-[16px] text-white text-white-400">2. Tecnologías backend</h3>  
+            <br>               
+            <h3 class="text-[16px] text-white text-white-400">.NET 8 con Entity Framework Core para persistencia</h3>                 
+            <h3 class="text-[16px] text-white text-white-400">SQL Server como base de datos</h3>  
+            <br>
+            <h3 class="text-[16px] text-white text-white-400">3. Buenas prácticas aplicadas</h3> 
+            <br>                
+            <h3 class="text-[16px] text-white text-white-400">Inyección de dependencias (DI).</h3>                 
+            <h3 class="text-[16px] text-white text-white-400">Uso de patrones como Repository</h3>  
+            <h3 class="text-[16px] text-white text-white-400">Manejo de DTOs para separar entidades de negocio</h3>  
+            <br>
+            <h3 class="text-[16px] text-white text-white-400">4. Gestión de errores y validaciones</h3>
+            <br>                
+            <h3 class="text-[16px] text-white text-white-400">Control de excepciones y respuestas claras en la API.</h3>                 
+            <h3 class="text-[16px] text-white text-white-400">Validaciones de datos con Data Annotations</h3>            
+            <br>
+            <h3 class="text-[16px] text-white text-white-400">Mediante los siguientes links Uds pueden llevar a cabo Depósitos y Retiros de una cuenta bancaria.</h3>            
+            <br>  
+            <h3 class="text-[16px] text-white text-white-400">
+        <h3 class="text-[18px] text-white ">MICROSERVICIO DE CLIENTES</h3>                  
+        <div class="flex flex-col items-start gap-2"> 
+        <a href="https://www.microservicioclientes.somee.com/swagger/index.html" target="_blank" class="flex flex-col items-start">
+        <span class="text-blue-500 font-semibold underline hover:underline mt-1">
+        https://www.microservicioclientes.somee.com/swagger/index.html
+        </span>
+        </a>  
+        </div>  
+    <br>   
+    <h3 class="text-[18px] text-white ">MICROSERVICIO DE MOVIMIENTOS</h3>                  
+      <div class="flex flex-col items-start gap-2"> 
+        <a href="https://www.microserviciomovimientos.somee.com/swagger/index.html" target="_blank" class="flex flex-col items-start">
+        <span class="text-blue-500 font-semibold underline hover:underline mt-1">
+        https://www.microserviciomovimientos.somee.com/swagger/index.html
+        </span>
+        </a>  
+      </div>  
+         <div class="flex flex-col items-start gap-2">  </section>
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="px-4 py-10">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-[35px] font-bold text-yellow-400 text-center mb-4">Habilidades Técnicas</h2>      
+      <h3 class="text-[20px] text-yellow-400 font-semibold mb-4">Base de Datos:</h3>
+       
+      <!-- Base de Datos -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+         
+         
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+
+              <!-- Logo + Texto -->
+              <div class="flex items-center gap-4">
+              <img
+              src="img/sql-server.png"
+              alt="Sql Server Logo"
+              class="w-12 h-12 object-contain"
+          />
+            <h3 class="font-semibold text-white text-lg">Sql Server</h3>
+          </div>
+
+            <!-- Flecha -->
+          <svg :class="open ? 'rotate-180' : ''" 
+            class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+            fill="currentColor" 
+            viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+          </svg>
+
+         </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              Almacenamiento y procesamiento de datos con:               
+              Transact SQL</li>
+              <li>Procedimientos almacenados</li>              
+            </ul>
+          </div>
+        </div>
+
+
+
+
+      <h3 class="text-[20px] text-yellow-400 font-semibold mb-4">Backend:</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- C# / .NET -->
+        <div x-data="{ open: false }" 
+     class="rounded-xl transition-all duration-300" 
+     :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+  
+  <!-- Header del Accordion C# -->
+  <div @click="open = !open" 
+       class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+
+    <!-- Logo + Texto -->
+    <div class="flex items-center gap-4">
+      <img
+        src="img/Logo_C_sharp.svg.png"
+        alt="C# Logo"
+        class="w-12 h-12 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">C# .NET</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>
+  </div>
+  
+  <!-- Contenido -->
+  <div x-show="open" x-transition 
+       class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+    <ul class="list-disc pl-5 space-y-1">
+      Amplia experiencia en la creación de aplicaciones web dinámicas con: 
+      <li>.NET 8</li>
+      <li>.NET Framework</li>
+      <li>MVC (Modelo Vista Controlador)</li>
+      <li>Patrón de Diseño (Singleton)</li>
+      <li>Principios SOLID</li>
+      <li>Clean Code</li>
+      <li>ORM (Entity Framework Core y Entity Framework)</li>
+      <li>Linq</li>
+      <li>SignalR</li>
+    </ul>
+  </div>
+</div>
+
+
+
+    <!-- Java - Kotlin -->
+  <div x-data="{ open: false }" 
+     class="rounded-xl transition-all duration-300" 
+     :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+  
+  <!-- Header del Accordion Java - Kotlin -->
+  <div @click="open = !open" 
+       class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+
+    <!-- Logo + Texto -->
+    <div class="flex items-center gap-4">
+      <img
+        src="img/jk.png"
+        alt="Java Logo"
+        class="w-12 h-12 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">Java - Kotlin</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>
+  </div>
+  
+  <!-- Contenido -->
+  <div x-show="open" x-transition 
+       class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+    <ul class="list-disc pl-5 space-y-1">
+      Dominio en el desarrollo y creación de aplicaciones móviles con:
+      <li>Android Studio</li>
+      <li>Room</li>
+      <li>Retrofit</li>
+      <li>MVP</li>
+      <li>MVVM</li>
+      <li>Android JetPackCompose</li>      
+    </ul>
+  </div>
+</div>
+
+
+         <!-- Apis -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+            
+             <!-- Logo + Texto -->
+    <div class="flex items-center gap-4">
+      <img
+        src="img/api.png"
+        alt="Api Logo"
+        class="w-12 h-12 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">Api</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>
+
+
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              Creación y cnsumo de Servicios Web de tipo: 
+              <li>Soap (XML)</li>
+              <li>Restful (JSON)</li>              
+            </ul>
+          </div>
+        </div>
+
+
+
+        <!-- Seguridad Web -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+            
+    <div class="flex items-center gap-4">
+      <img
+        src="img/sweb.png"
+        alt="Api Logo"
+        class="w-12 h-12 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">Seguridad Web</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>
+
+
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              Desarrollo de software seguro con: 
+              <li>OAuth 2.0 (Autenticación y autorización segura)</li>
+              <li>JSON Web Tokens (JWT) para gestión de sesiones</li>              
+              <li>Prevención de ataques CSRF y XSS en aplicaciones web</li>
+            </ul>
+          </div>
+        </div>      
+    </div> 
+        <!-- FrontEnd -->
+<h3 class="text-[20px] text-yellow-400 font-semibold mb-4">FrontEnd:</h3>
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+    <div class="flex items-center gap-4">
+      <img
+        src="img/net_angular-logo.png"
+        alt="Api Logo"
+        class="w-12 h-12 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">.Net - Angular</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>
+
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li>BLAZOR Web Assembly</li>
+              <li>RAZOR Pages</li>
+              <li>ANGULAR</li>
+              <li>Typescript</li>
+              <li>Javascript</li>
+              <li>CSS3</li>
+              <li>Html5</li>
+              <li>Bootstrap 5.3</li>
+              <li>Tailwind</li>
+              <li>RadixUI</li>            
+            </ul>
+          </div>
+        </div>
+       <h3 class="text-[20px] text-yellow-400 font-semibold mb-4">Testing:</h3>
+       <!-- Testing -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+           <div class="flex items-center gap-4">
+            <img
+            src="img/postman.png"
+          alt="Postman Logo"
+        class="w-12 h-12 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">Postman</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>
+
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li>xUnit</li>
+              <li>Swagger</li>
+              <li>Postman</li>              
+            </ul>
+          </div>
+        </div>
+        <h3 class=" text-[20px] text-yellow-400 font-semibold mb-4">CLOUD - Integración y Entrega Continua (CI/CD):</h3>
+       <!-- Testing -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+<div class="flex items-center gap-4">
+            <img
+            src="img/azure.png"
+          alt="Azure Logo"
+        class="w-12 h-12 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">Azure</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>            
+            
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Azure</li>
+              <li>Git</li>
+              <li>GitHub Actions</li>              
+            </ul>
+          </div>
+        </div>
+      <h3 class="text-[20px] text-yellow-400 font-semibold mb-4">Metodología:</h3>
+       <!-- Testing -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+            <div class="flex items-center gap-4">
+            <img
+            src="img/scrum-logo.png"
+          alt="Azure Logo"
+        class="w-16 h-16 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">Ágil</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>            
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Scrum</li>              
+            </ul>
+          </div>
+        </div>    
+    <h3 class="text-[20px] text-yellow-400 font-semibold mb-4">IA Generativa</h3>
+       <!-- Testing -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+           <div class="flex items-center gap-4">
+            <img
+            src="img/ia.png"
+          alt="IA Logo"
+        class="w-12 h-12 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">Nivel Básico</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>            
+          </div>
+    
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li>OpenAI y LangChain para automatización de tareas</li>              
+              <li>Integración de IA en proyectos Fullstack con .NET 9</li>
+              <li>Angular 19 con funciones de IA generativa</li>
+              <li>Consultas inteligentes con SQL Server y automatización.</li>
+              <li>Arquitectura de Microservicios con .NET, Docker y Kubernetes</li>
+              <li>Diseño de Experiencia de Usuario (UX/UI) e Interfaces</li>
+            </ul>
+          </div>
+        </div>
+    <!-- Habilidades Blandas -->
+     <h2 class="text-[35px] font-bold text-yellow-400 text-center mb-4">Habilidades Blandas</h2>
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+              <div class="flex items-center gap-4">
+            <img
+            src="img/hb.png"
+          alt="IA Logo"
+        class="w-12 h-12 object-contain"
+      />
+      <h3 class="font-semibold text-white text-lg">Soft Skills</h3>
+    </div>
+
+    <!-- Flecha -->
+    <svg :class="open ? 'rotate-180' : ''" 
+         class="w-4 h-4 text-yellow-400 transition-transform duration-300" 
+         fill="currentColor" 
+         viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+    </svg>            
+          </div>
+        <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Comunicación efectiva </li>              
+              <li>Trabajo en equipo con enfoque ágil (Scrum).</li>
+              <li>Experiencia colaborando con equipos multidisciplinarios bajo metodologías ágiles.</li>
+              <li>Adaptabilidad al cambio y autoaprendizaje constante</li>
+              <li>Gestión del tiempo y cumplimiento de entregas</li>
+              <li>Organización efectiva de tareas para cumplir objetivos dentro de plazos exigentes</li>
+            </ul>
+          </div>
+        </div>
+
+    <section id="experiencia" class="px-4 py-10">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-[35px] font-bold text-yellow-400 text-center mb-4">Experiencia</h2>       
+      <h3 class="text-[20px] text-yellow-400 font-semibold">LAAR COURIER EXPRESS</h3>                  
+      <h3 class="text-[20px] font-semibold text-white">CARGO: DESARROLLADOR FULLSTACK MÓVIL Y WEB </h3>
+      <h3 class="text-[20px] font-semibold text-white">MAYO 2019 - ABRIL 2025 </h3>
+            <br>
+            <h3 class="text-[18px] font text-white">Durante este período, lideré y ejecuté el desarrollo de 3 aplicaciones móviles y 2 aplicaciones web importantes, desde la fase de análisis hasta la implementación y mantenimiento, enfocadas en logística, tracking de paquetes y control de operaciones internas</h3>                
+            <br>
+            <h3 class="text-[18px] font-semibold text-white">RESPONSABILIDADES:</h3>    
+<br>
+<ul class="list-disc pl-5 space-y-1">
+  <li class="text-[18px] text-white">Atendí requerimientos funcionales y técnicos para la construcción completa de soluciones móviles y web desde cero</li>                            
+  <li class="text-[18px] text-white">Desarrollé 3 aplicaciones móviles nativas con el IDE Android Studio y 2 aplicaciones web con el IDE Visual Studio 2022</li>
+  <li class="text-[18px] text-white">Diseñé e implementé la arquitectura backend en .NET 8 (C#), integré servicios SOAP y REST y utilicé SQL Server (T-SQL) como motor de base de datos principal</li>   
+  <li class="text-[18px] text-white">Realicé mantenimiento evolutivo y correctivo de las aplicaciones, además implementé nuevos módulos según las necesidades de la empresa</li>
+  <li class="text-[18px] text-white">Gestioné el control de versiones con Git y participé activamente en sprints bajo metodología Scrum</li>
+</ul>
+
+<br>
+<h3 class="text-[18px] font-semibold text-white">PROYECTOS REALIZADOS:</h3>    
+<br>
+<div class="pl-0">
+  <h3 class="text-[18px] font-semibold text-white">1. GeoLaar (Android)</h3>    
+  <br>
+  <h3 class="text-[18px] text-white">Aplicación principal de seguimiento y trazabilidad de entregas de paquetes</h3>
+  <br>
+  <h3 class="text-[18px] text-white">DESARROLLADA con Android Studio (Java/Kotlin), consumo de servicios REST/SOAP y programada con el Backend .NET 8 (C#) y SQL Server</h3>
+</div>                       
+            <br>
+            <h3 class="text-[18px] text-white text-yellow-400">CANAL DE YOUTUBE - DEMO PROYECTO</h3>
+            <br>
+            <a href="https://www.youtube.com/watch?v=X8HER-2eshs" target="_blank" class="underline text-yellow-400 hover:text-yellow-300">
+               https://www.youtube.com/watch?v=X8HER-2eshs
+            </a>
+            <br>
+            <br>                 
+            <h3 class="text-[18px] font-semibold text-white">2. Tracking Web de Entregas (Web) </h3>   
+            <br>         
+            <h3 class="text-[18px] text-white">Aplicación web construida desde cero para el control y monitoreo de entregas, paquetes y ubicaciones. Incluye panel de visualización geográfica con mapa dinámico y trazabilidad por zonas. </h3>
+            <br>   
+            <h3 class="text-[18px] text-white">DESARROLLADA en .NET 8 (C#), HTML, CSS, JavaScript, Bootstrap y Blazor WebAssembly, conectada a SQL Server</h3>    
+            <br>
+            <h3 class="text-[18px] font-semibold text-white">3. Ubicame LAAR (Android) </h3>   
+            <br>
+            <h3 class="text-[18px] text-white">Aplicación de localización de recaudadores en campo</h3>    
+            <br>
+            <h3 class="text-[18px] text-white">DESARROLLADA con Android Studio (Java/Kotlin), consumo de servicios REST/SOAP y acceso a base de datos SQL Server</h3>
+             <br>
+            <h3 class="text-[18px] font-semibold text-white">4. Tracking Empleados (Web) </h3>  
+            <br>
+            <h3 class="text-[18px] text-white">Aplicación web construida desde cero para supervisión y control de rutas de recaudadores, con mapeo dinámico e indicadores visuales. </h3>
+            <br>
+            <h3 class="text-[18px] text-white">DESARROLLADA en .NET 8 (C#), HTML, CSS, JavaScript, Bootstrap y Blazor WebAssembly, conectada a SQL Server</h3>
+            <br>
+            <h3 class="text-[18px] font-semibold text-white">5. PDA - LAARBOX (Android) </h3>  
+            <br>
+            <h3 class="text-[18px] text-white">Aplicación móvil para control y escaneo de paquetes en puntos aduaneros (Quiport)</h3>
+            <br>
+            <h3 class="text-[18px] text-white">DESARROLLADA con Kotlin, integrada con servicios SOAP y REST, y gestión de datos en SQL Server</h3>
+            <br>
+            <h3 class="text-[18px] font-semibold text-white">LOGROS DESTACADOS:</h3>  
+            <br>
+            <h3 class="text-[18px] text-white">Aplicación móvil para control y escaneo de paquetes en puntos aduaneros (Quiport)</h3>
+            <br>
+            <ul class="list-disc pl-5 space-y-1">              
+              <li class="text-[18px] text-white">Digitalicé completamente los procesos logísticos de la empresa, eliminando el  uso de registros manuales y optimizando la trazabilidad operativa.</li>
+              <li class="text-[18px] text-white">Mejoré en un 80% la eficiencia en el proceso de entrega y ubicación de paquetes, mediante el diseño e implementación de la app GeoLaar, con funcionalidades de geolocalización y actualización en tiempo real.</li>   
+              <li class="text-[18px] text-white">Asumí la responsabilidad total del ciclo de desarrollo y publicación de las aplicaciones móviles, asegurando su despliegue estable en Google Play Store, logrando mantener los sistemas operativos activos por más de 5 años sin interrupciones críticas.</li>                            
+            </ul>            
+            <br>           
+      <h3 class="text-[20px] text-yellow-400 font-semibold">QUIMICA ARISTON </h3>                  
+      <h3 class="text-[20px] font-semibold text-white">CARGO: ASISTENTE DE DESARROLLO DE SOFTWARE</h3>
+      <h3 class="text-[20px] font-semibold text-white">Julio 2018 - Diciembre 2018 </h3>
+      <BR>
+        <h3 class="text-[18px] font text-white">Durante este período, colaboré en el análisis y documentación de requerimientos para el sistema ERP interno, realizando además soporte técnico puntual y participando en tareas y mejoras del software empresarial.</h3>                
+      <br>
+      <h3 class="text-[18px] font-semibold text-white">RESPONSABILIDADES:</h3>    
+      <ul class="list-disc pl-5 space-y-1">
+        <li class="text-[18px] text-white">Participé en el análisis y levantamiento de requerimientos</li>                            
+        <li class="text-[18px] text-white">Brindé soporte técnico eventual a usuarios internos de la entidad.</li>
+        <li class="text-[18px] text-white">Colaboré en la documentación y seguimiento de procesos relacionados con módulos administrativos y de inventario.</li>           
+      </ul>            
+      <br>
+        <h3 class="text-[18px] font-semibold text-white">PROYECTO PLANIFICADO:</h3>    
+      <br>
+        <h3 class="text-[18px] text-white">1. Se elaboraron flujos de procesos, entrevistas con usuarios clave y documentación técnica como base para el desarrollo futuro del sistema.</h3>    
+      <BR>
+        <h3 class="text-[18px] font-semibold text-white">LOGROS DESTACADOS:</h3>  
+      <BR>
+        <ul class="list-disc pl-5 space-y-1">
+        <li class="text-[18px] text-white">Documenté procesos clave administrativos y operativos como base estructural para el futuro sistema ERP de la empresa. RPS 2018</li>                                    
+      </ul>                  
+      <BR>      
+        <h3 class="text-[20px] text-yellow-400 font-semibold">CORPORACIÓN MYL</h3>                  
+        <h3 class="text-[20px] font-semibold text-white">CARGO: DESARROLLADOR WEB FULLSTACK SEMI - SENIOR</h3>
+        <h3 class="text-[20px] font-semibold text-white">MARZO 2016 - MARZO 2018</h3>
+      <BR>     
+        <h3 class="text-[18px] text-white">Durante este período, participé activamente en el desarrollo y mejora de módulos para un sistema web orientado a la gestión de procesos jurídicos, atendiendo requerimientos funcionales y realizando integraciones con servicios y bases de datos empresariales.</h3>    
+      <BR>
+        <h3 class="text-[18px] font-semibold text-white">RESPONSABILIDADES:</h3>  
+        <BR>
+      <ul class="list-disc pl-5 space-y-1">
+        <li class="text-[18px] text-white">Atendí requerimientos funcionales y técnicos relacionados con el sistema FIEL web.</li>                            
+        <li class="text-[18px] text-white">Desarrollé nuevos módulos y funcionalidades conforme a las especificaciones del área jurídica.</li>
+        <li class="text-[18px] text-white">Implementé mejoras en el sistema utilizando .NET Framework 4.5 MVC (C#), HTML, CSS, JavaScript y Bootstrap.</li>           
+        <li class="text-[18px] text-white">Integré servicios SOAP (XML) y gestioné la comunicación con SQL Server 2014 como motor de base de datos.</li>           
+      </ul> 
+        <BR>
+        <h3 class="text-[18px] font-semibold text-white">PROYECTO REALIZADO:</h3> 
+        <BR>
+          <h3 class="text-[18px] font-semibold text-white">1.  Aplicación Web - FIEL Web  </h3>    
+          <br>
+          <h3 class="text-[18px] text-white">Desarrollo de módulos jurídicos personalizados para procesos administrativos legales. Mantenimiento evolutivo, pruebas y despliegue de nuevas funcionalidades integradas con servicios SOAP (XML) y SQL Server 2014. El sistema fue desarrollado con .NET Framework 4.5 MVC (C#) y HTML, CSS, JavaScript y Bootstrap.</h3>    
+          <br>
+          <h3 class="text-[18px] font-semibold text-white">LOGROS DESTACADOS:</h3>  
+          <br>
+          <ul class="list-disc pl-5 space-y-1">
+            <li class="text-[18px] text-white">Implementé módulos funcionales que optimizaron el flujo de trabajo del área jurídica, reduciendo tiempos de gestión interna en procesos legales.</li>                            
+            <li class="text-[18px] text-white">Fortalecí la estabilidad del sistema FIEL Web mediante integraciones efectivas con servicios SOAP y una estructura de datos robusta en SQL Server.</li>
+            <li class="text-[18px] text-white">Contribuí a la evolución del sistema con un enfoque modular y mantenible, garantizando continuidad operativa durante el crecimiento del proyecto.</li>                       
+          </ul>         
+          <br>
+          <h3 class="text-[20px] text-yellow-400 font-semibold">SISTRAN ANDINA</h3>                  
+          <h3 class="text-[20px] font-semibold text-white">CARGO: DESARROLLADOR WEB FULLSTACK SEMI - SENIOR</h3>
+          <h3 class="text-[20px] font-semibold text-white">MARZO 2015 - ENERO 2018</h3>
+          <br>
+          <h3 class="text-[18px] font-semibold text-white">RESPONSABILIDADES:</h3>    
+          <br>
+          <ul class="list-disc pl-5 space-y-1">
+            <li class="text-[18px] text-white">Desarrollé e implementé nuevos módulos dentro del sistema SOAT Web.</li>                            
+            <li class="text-[18px] text-white">Realicé mantenimiento correctivo y evolutivo en aplicaciones existentes</li>
+            <li class="text-[18px] text-white">Utilicé tecnologías como .NET Framework 4.5 MVC (C#), HTML, CSS, JavaScript y Bootstrap</li>           
+            <li class="text-[18px] text-white">Integré servicios SOAP (XML) y gestioné datos en SQL Server 2012</li>           
+          </ul>            
+          <br>
+          <h3 class="text-[18px] font-semibold text-white">PROYECTO REALIZADO:</h3> 
+          <br>
+          <h3 class="text-[18px] font-semibold text-white">1. Aplicación Web - SOAT Web  </h3>  
+          <br>
+          <h3 class="text-[18px] text-white">Desarrollo e implementación del módulo de Auditoría de Usuarios para la aseguradora Seguros Oriente. El sistema fue desarrollado en .NET Framework 4.5 MVC (C#), con tecnologías web como HTML, CSS, JavaScript y Bootstrap, integración con servicios SOAP (XML) y base de datos SQL Server 2012.</h3>    
+          <br>
+          <h3 class="text-[18px] font-semibold text-white">LOGROS DESTACADOS:</h3> 
+          <br>
+          <ul class="list-disc pl-5 space-y-1">
+            <li class="text-[18px] text-white">Diseñé e implementé un módulo de auditoría que permitió registrar y monitorear acciones de usuarios dentro del sistema, mejorando la trazabilidad y control de operaciones.</li>                            
+            <li class="text-[18px] text-white">Contribuí a la estabilidad y evolución de una plataforma para la emisión y control del SOAT, fortaleciendo la seguridad del sistema.</li>
+            <li class="text-[18px] text-white">Mejoré la eficiencia y el tiempo de respuesta del sistema mediante ajustes en consultas SQL.</li>                       
+          </ul>       
+          <br>     
+            <h3 class="text-[20px] text-yellow-400 font-semibold">BSOFT DEVELOPER'S</h3>                  
+            <h3 class="text-[20px] font-semibold text-white">CARGO: DESARROLLADOR WEB FULLSTACK JUNIOR </h3>
+            <h3 class="text-[20px] font-semibold text-white">Julio 2010 - Diciembre 2014</h3>
+          <br>     
+          <h3 class="text-[18px] text-white">Durante este período, formé parte del equipo de desarrollo de soluciones tecnológicas para el sector bancario, con enfoque en análisis de datos crediticios y desarrollo de módulos funcionales orientados al flujo de aprobación de créditos</h3>    
+          <br>
+          <h3 class="text-[18px] font-semibold text-white">RESPONSABILIDADES:</h3> 
+          <br>
+          <ul class="list-disc pl-5 space-y-1">
+            <li class="text-[18px] text-white">Desarrollé y mantuve aplicaciones web orientadas al sector bancario, especialmente en módulos de evaluación crediticia</li>                            
+            <li class="text-[18px] text-white">Participé en el análisis de datos de solicitudes de crédito para la implementación de reglas de negocio</li>
+            <li class="text-[18px] text-white">Atendí requerimientos funcionales del cliente en base a procesos financieros establecidos</li>                       
+            <li class="text-[18px] text-white">Utilicé tecnologías como .NET Framework 4.0 (C#), HTML, CSS, JavaScript y Bootstrap. </li>                       
+            <li class="text-[18px] text-white">Realicé integraciones mediante servicios SOAP (XML) y manejo de base de datos SQL Server 2008 R2</li>                                 
+          </ul>  
+          <br>
+          <h3 class="text-[18px] font-semibold text-white">PROYECTO REALIZADO:</h3> 
+          <br>
+          <h3 class="text-[18px] font-semibold text-white">1. Aplicación Web - Credit Score Web   </h3>  
+          <br>
+          <h3 class="text-[18px] text-white">Desarrollo del módulo de evaluación de solicitudes de crédito, basado en rutas definidas según puntaje, validación y fases de aprobación para Cooprogreso. El sistema fue desarrollado con .NET Framework 4.0 (C#), HTML, CSS, JavaScript y Bootstrap, integrando servicios SOAP (XML) y conectividad con SQL Server 2008 R2</h3>    
+          <br>
+          <h3 class="text-[18px] font-semibold text-white">LOGROS DESTACADOS:</h3> 
+          <br>
+          <ul class="list-disc pl-5 space-y-1">
+            <li class="text-[18px] text-white">Aporté al desarrollo de un módulo clave para la gestión del riesgo crediticio, mejorando el tiempo de evaluación de solicitudes. </li>                            
+            <li class="text-[18px] text-white">Contribuí al mantenimiento de una aplicación bancaria operativa, asegurando su estabilidad en entornos productivos.</li>
+            <li class="text-[18px] text-white">Me familiaricé con procesos de negocio del sector financiero desde una etapa temprana, fortaleciendo mi base profesional. </li>                                   
+          </ul>  
+          
+        <section id="certificaciones" class="px-4 py-10">
+ 
+       <h2 class="text-[35px] font-bold text-yellow-400 text-center mb-4">Certificaciones y Cursos</h2>            
+        <h3 class="text-yellow-400 font-semibold mb-4"></h3>
+       <!-- Testing -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+            
+            <h3 class="text-yellow-400 font-semibold mb-4">DESARROLLO WEB</h3>
+            
+            <svg :class="open ? 'rotate-180' : ''" class="w-4 h-4 text-yellow-400 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="text-[18px] text-white">Angular - Udemy </li>
+              <li class="text-[18px] text-white">JEE Web Applications - Escuela Politécnica Nacional</li>
+              <li class="text-[18px] text-white">Java Advanced Programming - Escuela Politécnica Nacional</li>              
+              <li class="text-[18px] text-white">Java Fundamentals Programming (con Eclipse) - Escuela Politécnica Nacional</li>              
+              <li class="text-[18px] text-white">Capacitación interna sobre Reglas de Negocio de Seguros - SISTRAN Andina S.A.</li>           
+            </ul>
+          </div>
+        </div>
+      <h3 class="text-yellow-400 font-semibold mb-4"></h3>
+       <!-- Testing -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+            <h3 class="text-yellow-400 font-semibold mb-4">DESARROLLO MÓVIL</h3>
+            <svg :class="open ? 'rotate-180' : ''" class="w-4 h-4 text-yellow-400 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="text-[18px] text-white">Kotlin - Udemy </li>   
+              <li class="text-[18px] text-white">Desarrollo de Apps Móviles Híbridas con Ionic - Udemy  </li>  
+              <li class="text-[18px] text-white">Desarrollo de Apps con AndroidX, Firebase y Kotlin - Udemy  </li>  
+              <li class="text-[18px] text-white">Desarrollo de Apps Android/iOS con Xamarin - Blue IT  </li>                             
+            </ul>
+          </div>
+        </div>   
+      
+        <h3 class="text-yellow-400 font-semibold mb-4"></h3>
+       <!-- Testing -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+            <h3 class="text-yellow-400 font-semibold mb-4">METODOLOGÍAS ÁGILES </h3>
+            <svg :class="open ? 'rotate-180' : ''" class="w-4 h-4 text-yellow-400 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="text-[18px] text-white">Scrum - SCRUMstudy  </li>                 
+            </ul>
+          </div>
+        </div>      
+        
+
+        <h3 class="text-yellow-400 font-semibold mb-4"></h3>
+       <!-- Testing -->
+        <div x-data="{ open: false }" class="rounded-xl transition-all duration-300" :class="open ? 'shadow-lg shadow-yellow-500/30' : 'shadow-none'">
+          <div @click="open = !open" class="flex justify-between items-center bg-neutral-900 px-6 py-4 cursor-pointer rounded-t-xl">
+            <h3 class="text-yellow-400 font-semibold mb-4">CURSOS EN PROGRESO 2025</h3>
+            <svg :class="open ? 'rotate-180' : ''" class="w-4 h-4 text-yellow-400 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 14l-6-6h12l-6 6z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div x-show="open" x-transition class="bg-neutral-900 px-6 py-4 rounded-b-xl text-sm">
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="text-[18px] text-white">OpenAI y LangChain para automatización de tareas</li>    
+              <li class="text-[18px] text-white">Integración de IA en proyectos Fullstack con .NET 9 </li>    
+              <li class="text-[18px] text-white">Angular 19 con funciones de IA generativa </li>    
+              <li class="text-[18px] text-white">Consultas inteligentes con SQL Server y automatización </li>    
+              <li class="text-[18px] text-white">Arquitectura de Microservicios con .NET, Docker y Kubernetes </li>    
+              <li class="text-[18px] text-white">Diseño de Experiencia de Usuario (UX/UI) e Interfaces</li>    
+            </ul>
+          </div>
+        </div>     
+      </div>
+
+  <section id="contacto" class="px-4 py-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-[35px] font-bold text-yellow-400 text-center mb-4">Contacto</h2>       
+        <h3 class="text-yellow-400 font-semibold">DIRECCIÓN</h3>                  
+        <h3 class="text-white">EL INCA - SECTOR NORTE </h3>
+      </div>
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-yellow-400 font-semibold">TELÉFONO</h3>                  
+        <h3 class="text-white">0994084917</h3>
+      </div>
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-yellow-400 font-semibold">EMAIL</h3>                  
+        <h3 class="text-white">ricardonavascabezas@gmail.com</h3>
+      </div>   
+  </section>
+  <footer class="py-4 mt-10">
+    <div class="max-w-5xl mx-auto text-center">
+      <!-- Uso h3 para que tome el mismo tamaño/color que tus <h3 class="text-white"> -->
+      <h3 class="text-white">© 2025 Ricardo Navas.</h3>
+    </div>
+  </footer>
+  </body>
+</html>
